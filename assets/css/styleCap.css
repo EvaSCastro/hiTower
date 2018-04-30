@@ -1,0 +1,56 @@
+body{
+    margin: auto;
+    font-family: Century Gothic;
+    transition: .5s;
+    background-color: white;
+}
+.caixaTexto{
+    text-align: center;
+    position: absolute;
+    left: 10%;
+	top: 50%
+}
+.caixaComentario{
+    position: absolute;
+    left: 10%;
+	top: 50%;
+}
+p{
+    word-wrap: break-word;
+    text-align: justify;
+    overflow-y: auto;
+}
+.margemT{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.margemP{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    font-size: x-large;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }

@@ -1,0 +1,80 @@
+/* USER PROFILE PAGE */
+.card {
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgba(34,34,34,0.8);
+}
+.card.hovercard {
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 0 200px rgba(0,0,0,0.3) inset;
+}
+.card.hovercard .useravatar img {
+    border: 3px solid #222;
+}
+.card.hovercard .useravatar-hh img {
+    border: 2px solid #222;
+}
+.card.hovercard .card-info{
+    color: black;
+}
+.card.hovercard .card-info .card-title {
+    line-height: 1;
+    color: black;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+}
+
+.conteudo{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bio{
+    color: black;
+    box-shadow: 0 0 200px rgba(0,0,0,0.1) inset;
+}
+.p-bio{
+    margin: 10px;
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+.container{
+    padding: 0px;
+}
+.container h3{
+    margin-top: 0px;
+    padding: 0px;
+    text-overflow: ellipsis;
+}
+
+.hh{
+    padding: 0px;
+}
+.hh h4{
+    margin: 0px;
+}
+.p-bio-hh{
+    font-size: 12px;
+    margin: 10px;
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+
+.painel{
+    background-color: black;
+    border-radius: 5px;
+}

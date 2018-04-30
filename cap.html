@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/styleCap.css">
+    <link rel="stylesheet" href="assets/css/sideNav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styleMain.css">
+    <link rel="stylesheet" href="assets/css/.css">
+    <link rel="stylesheet" href="assets/css/sideNav.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <section class="welcome">
+        <!--MENU LATERAL-->
+        <div class="sidenav" id="sidenav"> 
+            <header onclick="closeNav()">
+                <img src="assets/img/logo/hiTowerBanner.png">
+            </header>
+            <section>
+                <img class="bg" src="assets/img/geral/bgSideNav.jpg">
+                <div class="submenus">
+                    <!--<div class="row" style="margin-bottom: 20px;">
+                        <img class="button-round" src="assets/img/geral/home.png">
+                        <img class="button-round" src="assets/img/geral/library.png">
+                    </div>-->
+                    <div>
+                        <a href="index.html"><span style="margin-right: 10px;" class="glyphicon glyphicon-home"></span>Home</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-book"></span>Biblioteca</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-bookmark"></span>Capítulos Salvos</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-cog"></span>Configurações</a>
+                    </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu1">Submenu 1 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu1" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu2">Submenu 2 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu2" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu3">Submenu 3 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu3" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                </div>
+            </section>
+            <footer>
+                © 2018 Copyright, hiTower
+            </footer>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("sidenav").style.width = "0";
+            }
+        </script>
+        <!--./MENU LATERAL-->
+        
+        <!--LOGIN MODAL-->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1 style="color: black;">Entrar</h1><br>
+                    <form>
+                        <input type="text" name="user" placeholder="Usuário">
+                        <input type="password" name="pass" placeholder="Senha">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+                    <div class="login-help">
+                        <a href="#">Registrar</a> - <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--REGISTRAR MODAL-->
+        <div class="modal fade" id="registrarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1 style="color: black;">Cadastrar</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Usuário">
+                    <input type="text" name="email" placeholder="E-mail">
+					<input type="password" name="pass" placeholder="Senha">
+                    <input type="password" name="passConf" placeholder="Confirmar senha">
+					<input type="submit" name="registrar" class="login loginmodal-submit" value="Cadastrar">
+				  </form>
+				</div>
+			</div>
+		  </div>
+        
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar navbar-inverse navbarMain sticky" id="navbarMain" style="z-index: 16; border-radius: 0px;">
+            <div class="nav navbar-nav" style="margin-left: 20px">
+                <!--LOGO SIDE NAV-->
+                <a style="float: left;" href="#navbarMain"><img class="burger" onclick="openNav()" src="assets/img/logo/hiTowerLogo.png"></a>
+                
+                <!--BURGER RESPONSIVO-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="margin-right: 40px;">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <div class="nav navbar-nav navbar-right" style="margin-right: 20px">
+                    <!--BOTÃO "CADASTRE-SE"-->
+                    <li><a href="#" data-toggle="modal" data-target="#registrarModal"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                    <!--BOTÃO "LOGIN"-->
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </div>
+                <!--BARRA "PESQUISAR"-->
+                <form>
+                    <input type="text" class="pesquisar input col-xs-10 col-sm-10 col-md-4 col-lg-4" style="margin: 7px 0px;" placeholder="Pesquisar" name="pesquisar">
+                    <button class="btn btn-default" type="submit" style="float: left; margin: 7px 0px;">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+            <!--./BARRA "PESQUISAR"-->
+        </nav>
+        <!--BARRA DE NAVEGAÇÃO FIXA-->
+        <!--./BARRA DE NAVEGAÇÃO-->
+    </section>
+    
+    <div class="container-fluid">
+        <div class="col-sm-9 caixaTexto">
+            <h2 class="margemT">NOME DO LIVRO</h2>
+            <h5 class="margemT"><span class="glyphicon glyphicon-time"></span> Postado por (Autor), (mês) (dia), (ano).</h5>
+            <h5 class="margemT"><span class="label label-danger">Tag</span> <span class="label label-danger">Tag</span></h5><br>
+            <h1 class="margemT">CAPÍTULO (Número) - Título</h1>
+            <p class="margemP">
+                O Sr. e a Sra. Dursley, da rua dos Alfeneiros, n° 4, se orgulhavam de dizer que eram perfeitamente normais, muito bem, obrigado. Eram as últimas pessoas no mundo que se esperaria que se metessem em alguma coisa estranha ou misteriosa, porque simplesmente não compactuavam com esse tipo de bobagem.<br>
+                O Sr. Dursley era diretor de uma firma chamada Grunnings, que fazia perfurações. Era um homem alto, corpulento e quase sem pescoço, embora tivesse enormes bigodes. A Sra. Dursley era magra e loura e tinha um pescoço quase duas vezes mais comprido que o normal, o que era muito útil porque ela passava grande parte do tempo espichando-o por cima da cerca do jardim para espiar os vizinhos. Os Dursley tinham um filhinho chamado Dudley, o Duda, e em sua opnião não havia garoto melhor em nenhum lugar do mundo.<br>
+                Os Dursley tinham tudo que queriam, mas tinham também um segredo, e seu maior receio era que alguém o descobrisse. Achavam que não iriam aguentar se alguém descobrisse a existencia dos Potter. A Sra. Potter era irmã da Sra. Dursley, mas não se viam havia muitos anos; na realidade a Sra. Durley figia que não tinha irmã, porque esta e o marido imprestável eram o que havia de menos parecido possível com os Durley. Eles estremeciam só de pensar o que os vizinhos iriam dizer se os Potter aparecessem na rua. Os Dursley sabiam que os Potter tinham um filhinho, também, mas nunca o tinham visto. O garoto era mais uma razão para manter os Potter a distância; eles não queriam que Duda se misturasse com uma criança daquelas.<br>
+                Quando o Sr. e a Sra. Durley acordaram na terça-feira monótona e cinzenta em que nossa história começa, não havia nada no céu nublado lá fora sugerindo as coisas estranhas e misteriosas que não tardariam a acontecer por todo o país. O Sr. Dursley cantarolava ao escolher a gravata mais sem graça do mundo para ir trabalhar e Sra. Dursley fofocava alegremente enquanto tentava encaixar um Duda aos berros na cadeirinha alta.
+            </p>
+            <br><br>
+        </div>
+        <div class="col-sm-9 caixaComentario">
+            <h4>Deixe um comentário:</h4>
+            <form role="form">
+                <div class="form-group">
+                    <textarea class="form-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">Enviar</button>
+            </form>
+            <br><br>
+            <hr>
+            <p><span class="badge">2</span> Comentários:</p><br>
+
+        <div class="row">
+            <div class="col-sm-2 text-center">
+                <img src="assets/img/user/user.png" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-sm-10">
+                <h4>(Usuário) <small>(mês) (dia), (ano), HH:MM</small></h4>
+                <p>Adorei o capítulo!</p>
+                <hr>
+            </div>
+            <div class="col-sm-2 text-center">
+                <img src="assets/img/user/user.png" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-sm-10">
+                <h4>(Usuário) <small>(mês) (dia), (ano), HH:MM</small></h4>
+                <p>Muito bom!</p>
+                <hr>
+                <p><span class="badge">1</span> Comment:</p><br>
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img src="assets/img/user/user.png" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                        <div class="col-xs-10">
+                            <h4>(Usuário) <small>(mês) (dia), (ano), HH:MM</small></h4>
+                            <p>Eu também!</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="page-footer font-small stylish-color-dark pt-4 mt-4" id="footerStyle">
+        <br>
+        <br>
+        <!--LINKS-->
+        <div class="container text-left text-md-left">
+            <div class="row">
+                <!--PRIMEIRA COLUNA-->
+                <div class="col-md-4">
+                    <p><img style="width: 150px; height: auto;" src="assets/img/logo/hiTowerBanner.png"></p>
+                    <h5 class="mb-4 mt-3 font-weight-bold">© 2018 Copyright, hiTower™</h5>
+                </div>
+                <!--/.PRIMEIRA COLUNA-->
+                <!--SEGUNDA COLUNA-->
+                <div class="col-md-4">
+                    <p><img style="width: 30px; margin-right: 5px;" src="assets/img/geral/facebook.png">facebook.com/hiTower</p>
+                    <p><img style="width: 30px; margin-right: 5px;" src="assets/img/geral/instagram.png">@hiTower</p>
+                </div>
+                <!--/.SEGUNDA COLUNA-->
+            </div>
+        </div>
+        <!--/.LINKS-->
+        <br>
+    </footer>
+    <!--/.FOOTER-->
+</body>
+</html>

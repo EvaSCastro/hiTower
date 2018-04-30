@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>hiTower</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/mdb.min.css">-->
+    <link rel="stylesheet" href="assets/css/styleMain.css">
+    <link rel="stylesheet" href="assets/css/.css">
+    <link rel="stylesheet" href="assets/css/sideNav.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/rating.css">
+    <link rel="stylesheet" href="assets/css/styleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="overflow-x: hidden;">
+    <section class="welcome">
+        <!--MENU LATERAL-->
+        <div class="sidenav" id="sidenav"> 
+            <header onclick="closeNav()">
+                <img src="assets/img/logo/hiTowerBanner.png">
+            </header>
+            <section>
+                <img class="bg" src="assets/img/geral/bgSideNav.jpg">
+                <div class="submenus">
+                    <!--<div class="row" style="margin-bottom: 20px;">
+                        <img class="button-round" src="assets/img/geral/home.png">
+                        <img class="button-round" src="assets/img/geral/library.png">
+                    </div>-->
+                    <div>
+                        <a href="index.html"><span style="margin-right: 10px;" class="glyphicon glyphicon-home"></span>Home</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-book"></span>Biblioteca</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-bookmark"></span>Capítulos Salvos</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-cog"></span>Configurações</a>
+                    </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu1">Submenu 1 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu1" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu2">Submenu 2 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu2" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu3">Submenu 3 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu3" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                </div>
+            </section>
+            <footer>
+                © 2018 Copyright, hiTower
+            </footer>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("sidenav").style.width = "0";
+            }
+        </script>
+        <!--./MENU LATERAL-->
+            
+        <!--BANNER DE BOAS VINDAS-->
+        <header class="welcome">
+            <img src="assets/img/logo/d.gif" class="mx-auto d-block gif" alt="banner">
+        </header>
+        <!--./BOAS VINDAS-->
+            
+        <!--LOGIN MODAL-->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1 style="color: black;">Entrar</h1><br>
+                    <form>
+                        <input type="text" name="user" placeholder="Usuário">
+                        <input type="password" name="pass" placeholder="Senha">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+                    <div class="login-help">
+                        <a href="#">Registrar</a> - <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--./LOGIN MODAL-->
+            
+        <!--REGISTRAR MODAL-->
+        <div class="modal fade" id="registrarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1 style="color: black;">Cadastrar</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Usuário">
+                    <input type="text" name="email" placeholder="E-mail">
+					<input type="password" name="pass" placeholder="Senha">
+                    <input type="password" name="passConf" placeholder="Confirmar senha">
+					<input type="submit" name="registrar" class="login loginmodal-submit" value="Cadastrar">
+				  </form>
+				</div>
+			</div>
+		  </div>
+        <!--./REGISTRAR MODAL-->
+            
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar navbar-inverse navbarMain" id="navbarMain" style="z-index: 16; border-radius: 0px;">
+            <div class="nav navbar-nav" style="margin-left: 20px">
+                <!--LOGO SIDE NAV-->
+                <a style="float: left;" href="#navbarMain"><img class="burger" onclick="openNav()" src="assets/img/logo/hiTowerLogo.png"></a>
+                
+                <!--BURGER RESPONSIVO-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="margin-right: 40px;">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <div class="nav navbar-nav navbar-right" style="margin-right: 20px">
+                    <!--BOTÃO "CADASTRE-SE"-->
+                    <li><a href="#" data-toggle="modal" data-target="#registrarModal"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                    <!--BOTÃO "LOGIN"-->
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </div>
+                <!--BARRA "PESQUISAR"-->
+                <form>
+                    <input type="text" class="pesquisar input col-xs-10 col-sm-10 col-md-4 col-lg-4" style="margin: 7px 0px;" placeholder="Pesquisar" name="pesquisar">
+                    <button class="btn btn-default" type="submit" style="float: left; margin: 7px 0px;">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+            <!--./BARRA "PESQUISAR"-->
+        </nav>
+        <!--BARRA DE NAVEGAÇÃO FIXA-->
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbarMain");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+        <!--./BARRA DE NAVEGAÇÃO FIXA-->
+        <!--./BARRA DE NAVEGAÇÃO-->
+    </section>
+    
+
+    <!--CAROUSEL DE NOTÍCIAS-->
+    <h2 class="titulos carousel-margem">NOTÍCIAS</h2>
+    <div class="container">
+        <hr>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- INDICADORES -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!--;/INDICADORES-->
+
+            <!--SLIDES-->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="assets/img/carousel/blue.jpg" alt="Blue" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="assets/img/carousel/red.jpg" alt="Red" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="assets/img/carousel/green.png" alt="Green" style="width:100%;">
+                </div>
+            </div>
+            <!--./SLIDES-->
+
+            <!--CONTROLES "DIREITA" E "ESQUERDA"-->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+            <!--./CONTROLES "DIREITA" E "ESQUERDA"-->
+        </div>
+    </div>
+    <!--/.CAROUSEL DE NOTÍCIAS-->
+    
+    <!--MEIO-->
+    <article class="caixaMain">
+        <!--CAIXA MAIOR (SEÇÃO) MAIS LIDOS DA SEMANA-->
+        <h2 class="titulos">MAIS RECENTES</h2>
+        <hr>
+        <section>
+            <div class="row">
+                <!--CAIXA MENOR-->
+                <div class="livro col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-5">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 info">
+                        <h2>Título do livro</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Postado por (autor), (mês) (dia), (ano).</h5>
+                        <h5>
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus massa, vestibulum eget felis ac, placerat tristique ligula. Ut non justo justo. Mauris malesuada purus eu ex varius vulputate. In a nibh quam. Morbi consequat, velit ut consectetur iaculis, augue lorem fringilla</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 capa">
+                        <img src="assets/img/livro/A.jpeg">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4><small>RECOMENDAÇÕES/OBSERVAÇÕES</small></h4>
+                        <p class="rating">18</p>
+                    </div>
+                </div>
+                <!--/.CAIXA MENOR-->
+
+                <!--CAIXA MENOR-->
+                <div class="livro col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-5">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 info">
+                        <h2>Título do livro</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Postado por (autor), (mês) (dia), (ano).</h5>
+                        <h5>
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus massa, vestibulum eget felis ac, placerat tristique ligula. Ut non justo justo. Mauris malesuada purus eu ex varius vulputate. In a nibh quam. Morbi consequat, velit ut consectetur iaculis, augue lorem fringilla</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 capa">
+                        <img src="assets/img/livro/A.jpeg">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4><small>RECOMENDAÇÕES/OBSERVAÇÕES</small></h4>
+                        <p class="rating">16</p>
+                    </div>
+                </div>
+                <!--/.CAIXA MENOR-->
+            </div>
+            <!--/.CAIXA MAIOR "MAIS LIDOS DA SEMANA"-->
+        </section>
+
+        <!--CAIXA MAIOR (SEÇÃO) MAIS LIDOS DA SEMANA-->
+        <h2 class="titulos">MAIS LIDOS DA SEMANA</h2>
+        <hr>
+        <section>
+            <div class="row">
+                <!--CAIXA MENOR-->
+                <div class="livro col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-5">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 info">
+                        <h2>Título do livro</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Postado por (autor), (mês) (dia), (ano).</h5>
+                        <h5>
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus massa, vestibulum eget felis ac, placerat tristique ligula. Ut non justo justo. Mauris malesuada purus eu ex varius vulputate. In a nibh quam. Morbi consequat, velit ut consectetur iaculis, augue lorem fringilla</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 capa">
+                        <img src="assets/img/livro/A.jpeg">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4><small>RECOMENDAÇÕES/OBSERVAÇÕES</small></h4>
+                        <p class="rating">14</p>
+                    </div>
+                </div>
+                <!--/.CAIXA MENOR-->
+
+                <!--CAIXA MENOR-->
+                <div class="livro col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-5">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 info">
+                        <h2>Título do livro</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Postado por (autor), (mês) (dia), (ano).</h5>
+                        <h5>
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus massa, vestibulum eget felis ac, placerat tristique ligula. Ut non justo justo. Mauris malesuada purus eu ex varius vulputate. In a nibh quam. Morbi consequat, velit ut consectetur iaculis, augue lorem fringilla</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 capa">
+                        <img src="assets/img/livro/A.jpeg">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4><small>RECOMENDAÇÕES/OBSERVAÇÕES</small></h4>
+                        <p class="rating">18</p>
+                    </div>
+                </div>
+                <!--/.CAIXA MENOR-->
+            </div>
+            <!--/.CAIXA MAIOR "MAIS LIDOS DA SEMANA"-->
+        </section>
+
+        <!--CAIXA MAIOR (SEÇÃO) "MAIS LIDOS DESDE O INÍCIO"-->
+        <h2 class="titulos">MAIS LIDOS DESDE O INÍCIO</h2>
+        <hr>
+        <section>
+            <div class="row">
+                <!--CAIXA MENOR-->
+                <div class="livro col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-5">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 info">
+                        <h2>Título do livro</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Postado por (autor), (mês) (dia), (ano).</h5>
+                        <h5>
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus massa, vestibulum eget felis ac, placerat tristique ligula. Ut non justo justo. Mauris malesuada purus eu ex varius vulputate. In a nibh quam. Morbi consequat, velit ut consectetur iaculis, augue lorem fringilla</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 capa">
+                        <img src="assets/img/livro/A.jpeg">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4><small>RECOMENDAÇÕES/OBSERVAÇÕES</small></h4>
+                        <p class="rating"></p>
+                    </div>
+                </div>
+                <!--/.CAIXA MENOR-->
+
+                <!--CAIXA MENOR-->
+                <div class="livro col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-5">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 info">
+                        <h2>Título do livro</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Postado por (autor), (mês) (dia), (ano).</h5>
+                        <h5>
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus massa, vestibulum eget felis ac, placerat tristique ligula. Ut non justo justo. Mauris malesuada purus eu ex varius vulputate. In a nibh quam. Morbi consequat, velit ut consectetur iaculis, augue lorem fringilla</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 capa">
+                        <img src="assets/img/livro/A.jpeg">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4><small>RECOMENDAÇÕES/OBSERVAÇÕES</small></h4>
+                        <p class="rating">12</p>
+                    </div>
+                </div>
+                <!--/.CAIXA MENOR-->
+            </div>
+            <!--/.CAIXA MAIOR "MAIS LIDOS DESDE O INÍCIO"-->
+        </section>
+
+        <!--CAIXA MAIOR (SEÇÃO) "MAIS BEM AVALIADOS"-->
+        <h2 class="titulos">MAIS BEM AVALIADOS</h2>
+        <hr>
+        <section>
+            <div class="row">
+                <!--CAIXA MENOR-->
+                <div class="livro col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-5">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 info">
+                        <h2>Título do livro</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Postado por (autor), (mês) (dia), (ano).</h5>
+                        <h5>
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus massa, vestibulum eget felis ac, placerat tristique ligula. Ut non justo justo. Mauris malesuada purus eu ex varius vulputate. In a nibh quam. Morbi consequat, velit ut consectetur iaculis, augue lorem fringilla</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 capa">
+                        <img src="assets/img/livro/A.jpeg">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4><small>RECOMENDAÇÕES/OBSERVAÇÕES</small></h4>
+                        <p class="rating"></p>
+                    </div>
+                </div>
+                <!--/.CAIXA MENOR-->
+
+                <!--CAIXA MENOR-->
+                <div class="livro col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-5">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 info">
+                        <h2>Título do livro</h2>
+                        <h5><span class="glyphicon glyphicon-time"></span> Postado por (autor), (mês) (dia), (ano).</h5>
+                        <h5>
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span> 
+                            <span class="label label-primary">Tag</span>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus massa, vestibulum eget felis ac, placerat tristique ligula. Ut non justo justo. Mauris malesuada purus eu ex varius vulputate. In a nibh quam. Morbi consequat, velit ut consectetur iaculis, augue lorem fringilla</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 capa">
+                        <img src="assets/img/livro/A.jpeg">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4><small>RECOMENDAÇÕES/OBSERVAÇÕES</small></h4>
+                        <p class="rating"></p>
+                    </div>
+                </div>
+                <!--/.CAIXA MENOR-->
+            </div>
+            <!--/.CAIXA MAIOR "MAIS BEM AVALIADOS"-->
+        </section>
+        <!--CLASSIFICAÇÃO INDICATIVA-->
+        <script>
+            $(".rating").each(function(){
+                switch($(this).text()){
+                    case 'L':
+                        $(this).addClass("rL");
+                        break;
+                    case '10':
+                        $(this).addClass("r10");
+                        break;
+                    case '12':
+                        $(this).addClass("r12");
+                        break;
+                    case '14': 
+                        $(this).addClass("r14");
+                        break;
+                    case '16':
+                        $(this).addClass("r16");
+                        break;
+                    case '18':
+                        $(this).addClass("r18");
+                        break;
+                }
+            });
+        </script>
+        <!--./CLASSIFICAÇÃO INDICATIVA-->
+    </article>
+    <!--./MEIO-->
+    
+    <!--FOOTER-->
+    <footer class="page-footer font-small stylish-color-dark pt-4 mt-4" id="footerStyle">
+        <br>
+        <br>
+        <!--LINKS-->
+        <div class="container text-left text-md-left">
+            <div class="row">
+                <!--PRIMEIRA COLUNA-->
+                <div class="col-md-4">
+                    <p><img style="width: 150px; height: auto;" src="assets/img/logo/hiTowerBanner.png"></p>
+                    <h5 class="mb-4 mt-3 font-weight-bold">© 2018 Copyright, hiTower™</h5>
+                </div>
+                <!--/.PRIMEIRA COLUNA-->
+                <!--SEGUNDA COLUNA-->
+                <div class="col-md-4">
+                    <p><img style="width: 30px; margin-right: 5px;" src="assets/img/geral/facebook.png">facebook.com/hiTower</p>
+                    <p><img style="width: 30px; margin-right: 5px;" src="assets/img/geral/instagram.png">@hiTower</p>
+                </div>
+                <!--/.SEGUNDA COLUNA-->
+            </div>
+        </div>
+        <!--/.LINKS-->
+        <br>
+    </footer>
+    <!--/.FOOTER-->
+</body>
+
+</html>

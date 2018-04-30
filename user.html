@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>hiTower</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/mdb.min.css">-->
+    <link rel="stylesheet" href="assets/css/styleMain.css">
+    <link rel="stylesheet" href="assets/css/.css">
+    <link rel="stylesheet" href="assets/css/sideNav.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/styleUser.css">
+    <link rel="stylesheet" href="assets/css/hexagon.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="overflow-x: hidden;
+    background-image: url(assets/img/user/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: black;">
+    <section class="welcome">
+        <!--MENU LATERAL-->
+        <div class="sidenav" id="sidenav"> 
+            <header onclick="closeNav()">
+                <img src="assets/img/logo/hiTowerBanner.png">
+            </header>
+            <section>
+                <img class="bg" src="assets/img/geral/bgSideNav.jpg">
+                <div class="submenus">
+                    <!--<div class="row" style="margin-bottom: 20px;">
+                        <img class="button-round" src="assets/img/geral/home.png">
+                        <img class="button-round" src="assets/img/geral/library.png">
+                    </div>-->
+                    <div>
+                        <a href="index.html"><span style="margin-right: 10px;" class="glyphicon glyphicon-home"></span>Home</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-book"></span>Biblioteca</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-bookmark"></span>Capítulos Salvos</a>
+                        <a href="javascript:void(0)"><span style="margin-right: 10px;" class="glyphicon glyphicon-cog"></span>Configurações</a>
+                    </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu1">Submenu 1 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu1" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu2">Submenu 2 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu2" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#submenu3">Submenu 3 <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <div id="submenu3" class="collapse submenu">
+                            <a href="javascript:void(0)">Opção 1</a>
+                            <a href="javascript:void(0)">Opção 2</a>
+                            <a href="javascript:void(0)">Opção 3</a>
+                        </div>
+                </div>
+            </section>
+            <footer>
+                © 2018 Copyright, hiTower
+            </footer>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("sidenav").style.width = "0";
+            }
+        </script>
+        <!--./MENU LATERAL-->
+        
+        <!--LOGIN MODAL-->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1 style="color: black;">Entrar</h1><br>
+                    <form>
+                        <input type="text" name="user" placeholder="Usuário">
+                        <input type="password" name="pass" placeholder="Senha">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+                    <div class="login-help">
+                        <a href="#">Registrar</a> - <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--REGISTRAR MODAL-->
+        <div class="modal fade" id="registrarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1 style="color: black;">Cadastrar</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Usuário">
+                    <input type="text" name="email" placeholder="E-mail">
+					<input type="password" name="pass" placeholder="Senha">
+                    <input type="password" name="passConf" placeholder="Confirmar senha">
+					<input type="submit" name="registrar" class="login loginmodal-submit" value="Cadastrar">
+				  </form>
+				</div>
+			</div>
+		  </div>
+        
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar navbar-inverse navbarMain sticky" id="navbarMain" style="z-index: 16; border-radius: 0px;">
+            <div class="nav navbar-nav" style="margin-left: 20px">
+                <!--LOGO SIDE NAV-->
+                <a style="float: left;" href="#navbarMain"><img class="burger" onclick="openNav()" src="assets/img/logo/hiTowerLogo.png"></a>
+                
+                <!--BURGER RESPONSIVO-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="margin-right: 40px;">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <div class="nav navbar-nav navbar-right" style="margin-right: 20px">
+                    <!--BOTÃO "CADASTRE-SE"-->
+                    <li><a href="#" data-toggle="modal" data-target="#registrarModal"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                    <!--BOTÃO "LOGIN"-->
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </div>
+                <!--BARRA "PESQUISAR"-->
+                <form>
+                    <input type="text" class="pesquisar input col-xs-10 col-sm-10 col-md-4 col-lg-4" style="margin: 7px 0px;" placeholder="Pesquisar" name="pesquisar">
+                    <button class="btn btn-default" type="submit" style="float: left; margin: 7px 0px;">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+            <!--./BARRA "PESQUISAR"-->
+        </nav>
+        <!--BARRA DE NAVEGAÇÃO FIXA-->
+        <!--./BARRA DE NAVEGAÇÃO-->
+    </section>
+    
+    <article class="caixaMain" style="margin-top: 50px;">
+        <div class="container col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-8 col-lg-8">
+            <!--DESKTOP-->
+            <div class="panel panel-default card hovercard hidden-xs hidden-sm">
+                <div class="panel-body card-info">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 useravatar">
+                            <img class="img-responsive" src="assets/img/user/userEx.jpg">
+                            <br>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
+                            <div class="container" style="width: 100%;">
+                                <h3>Nome de Usuário</h3>
+                                <h4 class="text-muted">@usuario</h4>
+                            </div>
+                            <div class="container col-md-8 col-lg-8 bio">
+                                <p class="p-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam ex, vestibulum in fringilla vel, auctor eu velit. Maecenas blandit euismod sapien, ut euismod mauris scelerisque ac. Curabitur tristique vestibulum massa at dapibus. Phasellus porttitor risus nulla, ac lacinia sem </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--./DESKTOP-->
+            <!--HANDHELD-->
+            <div class="panel panel-default card hovercard hidden-md hidden-lg">
+                <div class="panel-body card-info">
+                    <div class="row">
+                        <div class="col-xs-4 useravatar-hh">
+                            <img class="img-responsive" src="assets/img/user/userEx.jpg">
+                            <br>
+                        </div>
+                        <div class="col-xs-8 hh">
+                            <div class="container" style="width: 100%;">
+                                <h4>Nome de Usuário</h4>
+                                <h5 class="text-muted">@usuario</h5>
+                            </div>
+                        </div>
+                        <div class="container col-xs-12 bio">
+                            <p class="p-bio-hh">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam ex, vestibulum in fringilla vel, auctor eu velit. Maecenas blandit euismod sapien, ut euismod mauris scelerisque ac. Curabitur tristique vestibulum massa at dapibus. Phasellus porttitor risus nulla, ac lacinia sem </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--./HANDHELD-->
+            
+            <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="..." style="background-color: white;">
+                <div class="btn-group" role="group">
+                    <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab" onclick="SetActiveDiv(this);"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <div class="hidden-xs">Stars</div>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab" onclick="SetActiveDiv(this);"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                        <div class="hidden-xs">Favorites</div>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab" onclick="SetActiveDiv(this);"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <div class="hidden-xs">Following</div>
+                    </button>
+                </div>
+            </div>
+            <!--FUNÇÃO PARA DEIXAR DIV COMO ATIVO-->
+            <script>
+                function SetActiveDiv(el) {
+                    $(".btn-group .btn").removeClass("btn-primary");
+                    $(".btn-group .btn").addClass("btn-default");
+                    var element = $(el).closest('.btn');
+                    element.toggleClass("btn-primary");
+                    element.toggleClass("btn-default");
+                    element.disabled = true;
+                }
+            </script>
+        
+            <div class="well conteudo">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab1">
+                        <h3>This is tab 1</h3>
+                    </div>
+                    <div class="tab-pane fade in" id="tab2">
+                        <h3>This is tab 2</h3>
+                    </div>
+                    <div class="tab-pane fade in" id="tab3">
+                        <h3>This is tab 3</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--FOOTER-->
+    <footer class="page-footer font-small stylish-color-dark pt-4 mt-4" id="footerStyle">
+        <br>
+        <br>
+        <!--LINKS-->
+        <div class="container text-left text-md-left">
+            <div class="row">
+                <!--PRIMEIRA COLUNA-->
+                <div class="col-md-4">
+                    <p><img style="width: 150px; height: auto;" src="assets/img/logo/hiTowerBanner.png"></p>
+                    <h5 class="mb-4 mt-3 font-weight-bold">© 2018 Copyright, hiTower™</h5>
+                </div>
+                <!--/.PRIMEIRA COLUNA-->
+                <!--SEGUNDA COLUNA-->
+                <div class="col-md-4">
+                    <p><img style="width: 30px; margin-right: 5px;" src="assets/img/geral/facebook.png">facebook.com/hiTower</p>
+                    <p><img style="width: 30px; margin-right: 5px;" src="assets/img/geral/instagram.png">@hiTower</p>
+                </div>
+                <!--/.SEGUNDA COLUNA-->
+            </div>
+        </div>
+        <!--/.LINKS-->
+        <br>
+    </footer>
+    <!--/.FOOTER-->
+</body>
+</html>
