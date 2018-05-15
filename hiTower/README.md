@@ -1,4 +1,7 @@
 # LA TORRE DEL CARALHITO
 As Kanye West said:
 
-> Now imma fuck this model
+> Something wrong
+> I hold my head
+> Breno gone
+> a nigga dead
