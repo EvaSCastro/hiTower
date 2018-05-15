@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/styleMain.css">
+		<link rel="stylesheet" href="assets/css/sideNav.css">
+		<link rel="stylesheet" href="assets/css/login.css">
+
+		<link rel="stylesheet" href="assets/css/level.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="assets/js/infinite.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/header.js"></script>
+		<script src="assets/js/footer.js"></script>
+        
+        
+        <link rel="stylesheet" href="assets/css/styleTelaTroca.css">
+	</head>
+	<body>
+        <!--HEADER-->
+		<section class="header" id="header-main"></section>
+        <!--./HEADER-->
+        
+        <div class="margin"></div>
+        
+        
+        <!--MEIO-->
+		<div class="col-xs-12">
+            
+            <div class="text-center styleFormTitle col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                    <h2>ALTERAR INFORMAÇÕES DO USUÁRIO</h2>
+            </div>
+            
+            <form class="styleForm form-custom col-xs-offset-0 col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                <!--NOME-->
+                <div class="col-xs-12">
+                    <div class="col-xs-2 col-sm-1 col-md-1" style="padding: 0px;">
+                        <span class="glyphicon glyphicon-user col-xs-1 glyph-form"></span>
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-11" style="padding: 0px;">
+                        <span>
+                            <input class="balloon balloon-form" id="nome" type="text" placeholder="Nome"/>
+                            <label for="nome">Nome</label>
+                        </span>
+                    </div>
+                </div>
+                <!--CEP-->
+                <div class="col-xs-12">
+                    <div class="col-xs-2 col-sm-1" style="padding: 0px;">
+                        <span class="glyphicon glyphicon-globe col-xs-1 glyph-form"></span>
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col">
+                        <div class="col-xs-4 col">
+                            <span>
+                                <input class="balloon balloon-form" id="cidade" type="text" placeholder="Cidade"/>
+                                <label class="label-form" for="cidade">Cidade</label>
+                            </span>
+                        </div>
+                        <div class="col-xs-4 col" style="padding-left: 5px;">
+                            <span>
+                                <input class="balloon balloon-form" id="estado" type="text" placeholder="Estado"/>
+                                <label class="label-form" for="estado">Estado</label>
+                            </span>
+                        </div>
+                        <div class="col-xs-4 col" style="padding-left: 5px;">
+                            <span>
+                                <input class="balloon balloon-form" id="pais" type="text" placeholder="País"/>
+                                <label class="label-form" for="pais">País</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--NOME-->
+                <div class="col-xs-12">
+                    <div class="col-xs-2 col-sm-1 col-md-1" style="padding: 0px;">
+                        <span class="far fa-clock col-xs-1 glyph-form"></span>
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-11" style="padding: 0px;">
+                        <span>
+                            <input class="balloon balloon-form" id="msgApr" type="text" placeholder="Mensagem de Apresentação"/>
+                            <label class="label-form" for="msgApr">Mensagem de Apresentação</label>
+                        </span>
+                    </div>
+                </div>
+                <!--NOME-->
+                <div class="col-xs-12">
+                    <div class="col-xs-2 col-sm-1 col-md-1" style="padding: 0px;">
+                        <span class="glyphicon glyphicon-book col-xs-1 glyph-form"></span>
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-11" style="padding: 0px;">
+                        <span>
+                            <input class="balloon balloon-form" id="genero" type="text" placeholder="Gênero Favorito"/>
+                            <label class="label-form" for="genero">Gênero Favorito</label>
+                        </span>
+                    </div>
+                    
+                </div>
+                <!--NOME-->
+                <div class="col-xs-12">
+                    <div class="col-xs-2 col-sm-1 col-md-1" style="padding: 0px;">
+                        <span class="fas fa-bars col-xs-1 glyph-form"></span>
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-11" style="padding: 0px;">
+                        <span>
+                            <textarea class="caixatexto balloon balloon-form" id="descricao" placeholder="Bio" type="text"></textarea>
+                            <label class="label-form" for="descricao">Bio</label>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class= "col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-10 col" style="margin-top: 20px;">
+                    <div class="col-xs-3 col-md-3 col-lg-2 col">
+                        <button class="login loginmodal-submit btn-form btn-save" type="button" onclick="href='user.html'"><div class="glyphicon glyphicon-ok visible-xs"></div><div class="hidden-xs">Salvar</div></button>
+                    </div>
+                    <div class="col-xs-3 col-md-3 col-lg-2 col" style="margin-left: 20px;">
+                        <button class="login loginmodal-submit btn-form" type="submit"><div class="glyphicon glyphicon-remove visible-xs"></div><div class="hidden-xs">Cancelar</div></button>
+                    </div>
+            </div>
+        </div>
+        <!--./MEIO-->
+        
+        <!--FOOTER-->
+        <footer class="page-footer font-small col-xs-12 footer-main" id="footer-main"></footer>
+        <!--./FOOTER-->
+	</body>
+</html>

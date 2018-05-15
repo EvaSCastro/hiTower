@@ -1,0 +1,204 @@
+.caixaMain{
+    margin-top: 50px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    border-width: 0px;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.card.hovercard {
+    background-color: rgba(255,255,255,0.8);
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.conteudo{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bio{
+    color: black;
+    margin: 30px 15px;
+    margin-bottom: 0px;
+}
+.p-bio{
+    padding: 10px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    background-color: buttonface;
+}
+.p-info{
+    padding: 10px;
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+.container{
+    padding: 0px;
+}
+.bio h3{
+    margin-top: 0px;
+    padding: 0px;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.painel{
+    background-color: black;
+    border-radius: 5px;
+}
+
+.info-num{
+    margin: 0px 10px;
+}
+.info-num .info-num-n{
+    color: #222;
+    font-weight: bold;
+}
+
+.nome{
+    margin-bottom: 30px;
+}
+
+.nav-user{
+    background-color: white;
+    height: 60px;
+    padding: 0px;
+}
+.nav-user.useravatar .md-lg-style {
+    height: 200px;
+    width: auto;
+    display: block;
+    top: -120px;
+    position: absolute;
+    z-index: 3;
+    border: 5px solid white;
+}
+.nav-user.useravatar .xs-sm-style {
+    height: 40%;
+    width: auto;
+    top: -45px;
+    left: 30px;
+    position: absolute;
+    z-index: 3;
+    border: 3px solid white;
+}
+
+.background{
+    max-width: 1920px;
+    z-index: 0;
+}
+.background img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav-user .btn{
+    height: 60px;
+}
+.btn-seguir, .btn-seguir:focus{
+    background-color: #bd3246;
+    color: white;
+    transition: 0.2s;
+}
+.btn-seguir:hover{
+    background-color: #222;
+    color: white;
+}
+
+/*DROPDOWN*/
+.menu-extra-user a{
+    color: #bd3246;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.menu-extra-user a:hover{
+    color: #222;
+}
+.dropdown-menu{
+    font-size: 15px;
+    font-weight: normal;
+    color: #222;
+    text-align: left;
+}
+.dropdown-menu a{
+    padding: 10px;
+    color: #222;
+}
+.dropdown-menu a:hover{
+    background-color: #bd3246;
+    color: white;
+}
+.dropdown-menu span{
+    font-size: 13px;
+}
+
+/*POSTS*/
+.painel{
+    padding: 0px;
+    background-color: white;
+}
+.painel .post{
+    background-color: #eaeaea;
+}
+.tab-pane .sub-pane{
+    margin: 20px;
+}
+/*.painel .post .user-top{
+    z-index: 2;
+    height: 50px;
+    padding: 15px;
+    border: 0px;
+    border-width: 0px;
+    border-bottom: 3px solid #bd3246;
+    /*border-top-left-radius: 10px;*
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+}
+.painel .post .user-bottom{
+    z-index: 1;
+    height: 100px;
+    padding: 15px;
+    /*border-bottom-left-radius: 10px;*
+    background-color: #f2f2f2;
+    color: #222;
+    font-size: 15px;
+}
+.painel .post .user-top img{
+    width:70px;
+    height: auto;
+    border: 2px solid white;
+}*/
+.painel .post .ribbon-top{
+    z-index: 1;
+    height: 50px;
+    padding: 15px;
+    border: 0px;
+    border-width: 0px;
+    border-bottom: 3px solid #bd3246;
+    /*border-top-right-radius: 10px;
+    border-top-left-radius: 10px;*/
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+}
+.painel .post .ribbon-bottom{
+    z-index: 1;
+    padding: 15px;
+    /*border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;*/
+    background-color: #f2f2f2;
+    color: #222;
+    font-size: 15px;
+}
+
+.tab-content header h3{
+    padding: 15px 30px;
+    background-color: #bd3246;
+    color: white;
+}

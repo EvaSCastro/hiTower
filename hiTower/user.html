@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>hiTower</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styleMain.css">
+    <link rel="stylesheet" href="assets/css/sideNav.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/styleUser.css">
+    <link rel="stylesheet" href="assets/css/level.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/posts.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/footer.js"></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <section class="header" id="header-main"></section>
+    <!--./HEADER-->
+    
+    <div class="visible-xs margin"></div>
+    
+    <!--MEIO-->
+    <section class="caixaMain">
+        <section class="background">
+            <img src="assets/img/user/bg.jpg">
+        </section>
+        <section class="linha">
+            <div class="hidden-xs hidden-sm col-md-1 nav-user col"></div>
+            <div class="col-sm-12 col-md-3 col">
+                <div class="nav-user useravatar">
+                    <!--IMAGEM DE USUÁRIO-->
+                    <img class="img-circle md-lg-style hidden-xs hidden-sm" src="assets/img/user/userEx.jpg">
+                    <img class="img-circle xs-sm-style hidden-md hidden-lg" src="assets/img/user/userEx.jpg">
+                    <!--./IMAGEM DE USUÁRIO-->
+
+                    <!--LEVEL-->
+                    <span class="level" id="levelPerfil"><span style="font-size: 12px;">NÍVEL</span><br><span class="levelPerfilNum">41</span></span>
+                    <!--./LEVEL-->
+                </div>
+                
+                <div class="bio">
+                    <h3>
+                        Nome de Usuário
+                        <!--MENU EXPANSÍVEL-->
+                        <div class="btn-group menu-extra-user dropdown">
+                            <a class="dropdown-toggle glyphicon glyphicon-triangle-bottom" id="drop-extra-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu" aria-labelledby="drop-extra-user">
+                                <a class="dropdown-item col-xs-12" href="#"><span class="glyphicon glyphicon-flag"></span> Denunciar</a>
+                                <a class="dropdown-item col-xs-12" href="#">OP 2</a>
+                                <a class="dropdown-item col-xs-12" href="#">OP 3</a>
+                                <a class="dropdown-item col-xs-12" href="#">OP 4</a>
+                            </div>
+                        </div>
+                    </h3>
+                    
+                    <h4>
+                        <span class="text-muted">@usuario</span>
+                        <button class="btn btn-seguir" type="button"><span class="glyphicon glyphicon-plus"></span> Seguir</button>
+                    </h4>
+                </div>
+                <div class="info-num">
+                    <h4>
+                        <span class="font-weight-bold info-num-n" id="segNum"></span>
+                        <span class="text-muted"> seguidores</span>
+                        <span class="font-weight-bold info-num-n" id="pubNum"></span>
+                        <span class="text-muted"> publicações</span>
+                    </h4>
+                </div>
+                <div>
+                    <p class="p-bio">
+                        Follow the light, the light is your guide
+                    </p>
+                    <p class="text-muted p-info">
+                        <span class="glyphicon glyphicon-globe"></span> Cidade, Estado, País
+                    </p>
+                </div>
+            </div>
+                
+            <div class="btn-pref col-sm-12 col-md-7 col">
+                <div class="nav-user">
+                    <button type="button" id="ativBt" class="btn btn-a col-xs-2" href="#ativ" data-toggle="tab" onclick="setActiveDiv(this);">
+                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                        <div class="hidden-xs">Atividade</div>
+                    </button>
+                    <button type="button" id="pubBt" class="btn btn-b col-xs-2" href="#pub" data-toggle="tab" onclick="setActiveDiv(this);">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                        <div class="hidden-xs">Publicações</div>
+                    </button>
+                    <button type="button" id="avlBt" class="btn btn-b col-xs-2" href="#avl" data-toggle="tab" onclick="setActiveDiv(this);">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <div class="hidden-xs">Avaliações</div>
+                    </button>
+                    <button type="button" id="favBt" class="btn btn-b col-xs-2" href="#fav" data-toggle="tab" onclick="setActiveDiv(this);">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                        <div class="hidden-xs">Favoritos</div>
+                    </button>
+                    <button type="button" id="segnBt" class="btn btn-b col-xs-2" href="#segn" data-toggle="tab" onclick="setActiveDiv(this);">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <div class="hidden-xs">Seguindo</div>
+                    </button>
+                    <button type="button" id="segdBt" class="btn btn-b col-xs-2" href="#segd" data-toggle="tab" onclick="setActiveDiv(this);">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        <div class="hidden-xs">Seguidores</div>
+                    </button>
+                </div>
+                <div class="panel panel-default card hovercard">
+                    <div class="conteudo">
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active painel" id="ativ">
+                                <header class="col-xs-12 col">
+                                    <h3>Atividade recente</h3>
+                                    <hr>
+                                </header>
+                                <article class="sub-pane" id="postsUser">
+                                    <p id="loading" style="text-align: center;">
+                                        <img src="assets/img/geral/loading.webp" alt="Carregando…">
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="tab-pane fade in painel" id="pub">
+                                <header class="col-xs-12 col">
+                                    <h3>Publicações</h3>
+                                    <hr>
+                                </header>
+                                <article class="sub-pane" id="publicaçõesUser">
+                                    <p id="loading" style="text-align: center;">
+                                        <img src="assets/img/geral/loading.webp" alt="Carregando…">
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="tab-pane fade in painel" id="avl">
+                                <header class="col-xs-12 col">
+                                    <h3>Avaliações</h3>
+                                    <hr>
+                                </header>
+                                <article class="sub-pane" id="avaliaçõesUser">
+                                    <p id="loading" style="text-align: center;">
+                                        <img src="assets/img/geral/loading.webp" alt="Carregando…">
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="tab-pane fade in painel" id="fav">
+                                <header class="col-xs-12 col">
+                                    <h3>Favoritos</h3>
+                                    <hr>
+                                </header>
+                                <article class="sub-pane" id="favoritosUser">
+                                    <p id="loading" style="text-align: center;">
+                                        <img src="assets/img/geral/loading.webp" alt="Carregando…">
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="tab-pane fade in painel" id="segn">
+                                <header class="col-xs-12 col">
+                                    <h3>Seguindo</h3>
+                                    <hr>
+                                </header>
+                                <article id="seguindoUser">
+                                    <p id="loading" style="text-align: center;">
+                                        <img src="assets/img/geral/loading.webp" alt="Carregando…">
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="tab-pane fade in painel" id="segd">
+                                <!--colocar isso abaixo se quiser tirar o espaço do h3 class="sub-pane" comentado por:nô -->
+                                <header  class="col-xs-12 col">
+                                    <h3>Seguidores</h3>
+                                    <hr>
+                                </header>
+                                <article id="seguidoresUser">
+                                    <p id="loading" style="text-align: center;">
+                                        <img src="assets/img/geral/loading.webp" alt="Carregando…">
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-1 nav-user col"></div>
+        </section>
+    </section>
+    <!--./MEIO-->
+    
+    <!--FOOTER-->
+    <footer class="page-footer font-small col-xs-12 footer-main" id="footer-main"></footer>
+    <!--/.FOOTER-->
+</body>
+</html>

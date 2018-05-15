@@ -1,0 +1,51 @@
+.page-num{
+    padding: 10px 0px;
+    background-color: #bd3246;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-menu {
+	z-index: 17;
+  	position: fixed;
+  	bottom: 0;
+  	width: 100%;
+  	/* Set the fixed height of the footer here */
+  	height: 50px;
+  	line-height: 50px; /* Vertically center the text there */
+  	background-color: white;
+	color: #222;
+	text-align: center;
+	font-size: 25px;
+}
+
+/*DROPDOWN*/
+.menu-extra-user a{
+    color: #bd3246;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.menu-extra-user a:hover{
+    color: #222;
+}
+.dropdown-menu{
+    font-size: 15px;
+    font-weight: normal;
+    color: #222;
+    text-align: center;
+	min-width: 100px !important;
+	max-height: 232px !important;
+	overflow-y: auto !important;
+}
+.dropdown-menu a{
+    padding: 0px;
+    color: #222;
+	font-size: 20px;
+}
+.dropdown-menu a:hover{
+    background-color: #bd3246;
+    color: white;
+}
+.dropdown-menu span{
+    font-size: 13px;
+}

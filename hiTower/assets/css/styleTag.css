@@ -1,0 +1,32 @@
+body{
+    background-color: #eaeaea;
+}
+a{
+    color: #eaeaea;
+}
+a:hover{
+    color: #eaeaea;
+}
+hr{
+    width: 90%;
+}
+.navTag{
+    text-align: center;
+    background-color: #222;
+    color: #bd3246;
+    font-size: x-large;
+}
+.sectionCaixa{
+    background-color: #222;
+}
+.tagCaixa{
+    text-align: center;
+    padding: 50px;
+    background-color: #222;
+    color: #eaeaea;
+    font-size: large;
+}
+.styleQtd{
+    color: #bd3246;
+}
+

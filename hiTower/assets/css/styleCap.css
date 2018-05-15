@@ -1,0 +1,19 @@
+p{
+    word-wrap: break-word;
+    text-align: justify;
+    overflow-y: auto;
+}
+.styleTextoContainer{
+    margin-top: 2%;
+    background-color: #222222;
+    color: #eaeaea;
+}
+.styleTexto{
+    margin-bottom: 5%;
+    font-size: large;
+    border-right: solid;
+    border-left: solid;
+    border-bottom: solid;
+    border-color: #222222;
+    padding: 5%;
+}

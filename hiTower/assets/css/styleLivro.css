@@ -1,0 +1,41 @@
+p{
+    word-wrap: break-word;
+    text-align: justify;
+}
+.pLivro{
+    width: 100%;
+    height: 100%;
+}
+.styleSinopse{      
+    padding: 0% 30%;
+    font-size: large;
+}
+.h1Autor{
+    margin-top: 30%;
+}
+.h1Livro{
+    color: #222;
+    width: 40%;
+    margin:  0 auto 10px auto;
+}
+h4{
+    color: #bd3246;
+    font-size: x-large;
+}
+.capaLivro{
+    text-align: center;
+    padding: 5% 5%; 
+}
+img{
+    max-width: 390px; 
+    max-height: 560px;
+    height: auto; 
+    width: auto; 
+    /*border: solid;
+    border-color: #222222;
+    border-width: 5px;*/
+}
+hr{
+    border-color: #222222;
+    width: 40%;
+}

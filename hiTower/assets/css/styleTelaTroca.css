@@ -1,0 +1,54 @@
+.glyph-form{
+    top: 0px;
+    margin-top: 50px;
+    font-size: 20px; 
+    padding: 14px; 
+    margin-top: 20px;
+    background-color: #222; 
+    /*border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;*/
+    color: white;
+    text-align: center;
+}
+
+.balloon-form{
+    background: white;
+    /*border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+}
+
+.caixatexto{
+    height: 200px;
+}
+
+.btn-form{
+    width: 100%;
+}
+
+.btn-save:hover{
+    background-color: #23bc59;
+}
+
+.styleForm{
+    border: solid;
+    border: solid;
+    border: solid;
+    border-color: #222222;
+    padding: 2%;
+    background-color: #eaeaea;
+    opacity: 0.94;
+   
+}
+
+body{
+     background-image: url("../img/wallpaper/dvmn_2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.styleFormTitle{
+    margin-top: 2%;
+    background-color: #222222;
+    color: #eaeaea;
+}

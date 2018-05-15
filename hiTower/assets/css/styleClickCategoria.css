@@ -1,0 +1,31 @@
+/*.linha1{
+    background-color: #bd3246;
+    width: 50%;
+}
+.linha2{
+    background-color: #2b2b2b;
+    width: 50%;
+}*/
+.imgCategoria{
+    width: 100px;
+    height: 50px;
+}
+.tagCaixaCategorias{
+    text-align: center;
+    padding: 2% 5% 2% 5%;
+    background-color: #222222;
+    color: #eaeaea;
+    font-size: large;
+}
+.tagCaixaCategorias p{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.navTagCategorias{
+    text-align: center;
+    background-color: #222222;
+    padding: 0% 0% 2% 0%;
+    color: #bd3246;
+    font-size: x-large;
+}

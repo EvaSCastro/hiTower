@@ -1,0 +1,156 @@
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+    /*padding: 30px;*/
+    max-width: 350px;
+    width: 100% !important;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.loginmodal-container form{
+    margin: 30px;
+    margin-top: 0px;
+}
+
+/*BALÃO COM TÍTULO DO INPUT*/
+.form-custom:before {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: -1;
+    background: inherit;
+}
+.form-custom span {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.balloon {
+    width: 100%;
+    display: inline-block;
+    padding: 13px;
+    font-size: 16px;
+    color: #222;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    transition: all .3s ease-in-out;
+}
+.balloon::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+.balloon + label {
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: 5px 15px;
+    color: rgba(0,0,0,0);
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+    cursor: text;
+}
+.balloon + label:after {
+    transition: all .3s ease-in-out;
+}
+.balloon:focus,
+.balloon:active {
+    color: white;
+    text-indent: 0;
+    background: #222;
+}
+.balloon:focus::-webkit-input-placeholder,
+.balloon:active::-webkit-input-placeholder {
+    color: white;
+}
+.balloon:focus + label,
+.balloon:active + label {
+    color: white;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+    background: #bd3246;
+    font-size: 12px;
+    transform: translateY(-40px);
+}
+.balloon:focus + label:after,
+.balloon:active + label:after {
+    border-top: 5px solid #bd3246;
+}
+.balloon{
+    z-index: 2;
+}
+/*./BALÃO*/
+
+.loginmodal-container h1 {
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 15px 0px;
+    background-color: #bd3246;
+}
+
+.loginmodal-container input[type=submit] {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.loginmodal {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    height: 36px;
+    padding: 0 8px;
+}
+
+.loginmodal-submit {
+    border: 0px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0,0,0,0.1); 
+    background-color: black;
+    padding: 10px 0px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.loginmodal-submit:hover {
+    /* border: 1px solid #2f5bb7; */
+    border: 0px;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    background-color: #bd3246;
+}
+
+.loginmodal-container a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.6;
+    transition: opacity ease 0.5s;
+} 
+.login-help{
+    margin-bottom: 30px;
+}
+.login-help a{
+    font-size: 12px;
+}
+.login-help a:hover{
+    color: black;
+}
+
+.glyph{
+    font-size: 15px;
+    margin-top: 52px;
+    margin-right: 6px;
+}

@@ -1,0 +1,85 @@
+﻿/*CEBAÇALHO COM BOAS VINDAS*/
+.caixaMain{
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    vertical-align: middle;
+    margin: auto;
+}
+/*STYLE DOS TÍTULOS (MAIS RECENTES, MAIS LIDOS DA SEMANA, MAIS LIDOS DESDE O INÍCIO, ETC)*/
+.titulos{
+    text-align: center;
+}
+.row.livro{
+    padding: 30px;
+    color: white;
+    background: #222;
+}
+.livro{
+    padding: 0px;
+    color: white;
+    background: #222;
+}
+.livro h2{
+    margin-top: 0px;
+    color: #bd3246;
+}
+.livro .info p{
+    display: inline-block;
+    height: 120px;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.livro .capa img{
+    width: 100%;
+    height: auto;
+    transition: .2s;
+    margin-bottom: 10px;
+}
+.livro .label-primary{
+    background-color: #ad1d2e;
+}
+/*MARGEM DO CAROUSEL DE NOTÍCIAS PARA O H1*/
+.carousel-margem{
+    margin-top: 100px;
+}
+
+.card-livro{
+    text-align: center;
+    color: #eaeaea;
+}
+.card-livro img{
+    padding: 0px 20px;
+    max-width: 280px;
+}
+.card-livro h3{
+    color: #bd3246;
+    margin: 0px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.card-livro h3:hover{
+    color: #eaeaea;
+    cursor: pointer;
+}
+.card-livro .card-info-num{
+    border-top: 1px solid #bd3246;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.card-livro .livro-modal{
+    text-align: justify;
+    background-color: #222;
+    padding-top: 20px;
+    max-width: 600px;
+    width: 100% !important;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
